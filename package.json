@@ -1,0 +1,20 @@
+{
+  "name": "get-review-items",
+  "version": "0.0.1",
+  "description": "Use aws resource-groups to grab tags across all regions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "localhost"
+  },
+  "author": "Doug Pagani",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.468.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
