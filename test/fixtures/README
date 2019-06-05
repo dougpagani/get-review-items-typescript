@@ -1,0 +1,14 @@
+# How these fixtures were generated
+- AWS/resource-groups/tag-editor/find-resources
+- view network w/ chrome debugger tools
+
+# 3 core request targets during the operation:
+- resourcegroupstaggingapi
+- ardi
+- resourceexplorer (only if the previous two yielded results)
+
+Convert
+```sh
+cat ardi-request-payload.json | jq .contentString | jq fromjson | jq .ResourceQuery | jq .Query | jq fromjson | cat > example-cli-input.json
+```
+

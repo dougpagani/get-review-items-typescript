@@ -18,9 +18,15 @@ function print_regions(err, data) {
 
 }
 
+function get_items_in_region(aRegion) {
+    var resourcegroups = new AWS.ResourceGroups()
+    AWS.config.update({region: aRegion})
+
+}
+
 function get_tags(err, data) {
     console.log(data)
-//    data.forEach
+    data.forEach
 }
 
 // Send requests to each region
